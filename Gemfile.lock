@@ -2,18 +2,28 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.2)
+    language_server-protocol (3.17.0.0)
     method_source (0.9.2)
+    prettier_print (0.1.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    ruby-lsp (0.3.0)
+      language_server-protocol
+      sorbet-runtime
+      syntax_tree (>= 3.4)
+    sorbet-runtime (0.5.10398)
     sqlite3 (1.4.2)
+    syntax_tree (3.5.0)
+      prettier_print
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   pry
+  ruby-lsp (~> 0.3.0)
   sqlite3
 
 BUNDLED WITH
-   2.1.4
+   2.3.21
